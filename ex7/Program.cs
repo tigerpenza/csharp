@@ -19,13 +19,14 @@ Console.WriteLine("+");
 Console.SetCursorPosition(xc, yc);
 Console.WriteLine("+");
 
+
 int x = xa, y = xb;
 
-int count = 100;
+int count = 0;
 
-while(count < 10000);
+while(count < 1000)
 {
-    int what = new Random().Next(0,3); // [0;3) 0 1 2
+    int what = new Random().Next(0, 3); // [0;3) 0 1 2
     if(what == 0)
     {
         x = (x + xa) / 2;
@@ -37,6 +38,7 @@ while(count < 10000);
         x = (x + xb) / 2;
         y = (y + yb) / 2;
     }
+
     if(what == 2)
     {
         x = (x + xc ) / 2;
